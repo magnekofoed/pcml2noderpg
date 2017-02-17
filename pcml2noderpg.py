@@ -5,7 +5,7 @@ import re
 import sys, getopt
 def main(argv):
 	try:
-		opts, args = getopt.getopt(argv,"h:i:t:o:",["pcmlfilename=" , "resttype" , "jsfilename"])
+		opts, args = getopt.getopt(argv,"h:i:t:o:",["pcmlfilename" , "resttype" , "jsfilename"])
 	except getopt.GetoptError:
 		print('Usage: pcml2noderpg.py -i <pcmlfilename> -t <REST type (post/get)> -o <jsfilename>')
 		sys.exit(2)
